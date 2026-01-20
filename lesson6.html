@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 2000px; /* for scrolling */
+      padding: 20px;
+      /* background-color: #ebfc00; */
+    }
+
+    /* COMMON BOX STYLE */
+    .box {
+      width: 200px;
+      height: 100px;
+      color: white;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    /* STATIC */
+    .static {
+      position: static;
+      background: gray;
+    }
+
+    /* RELATIVE */
+    .relative {
+      position: relative;
+      top: 0px;
+      left: 20px;
+      background: green;
+    }
+
+    /* ABSOLUTE */
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 180px;
+      background: #000000;
+      margin-bottom: 40px;
+      padding: 20px;
+      color: aliceblue;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background: red;
+      width: 120px;
+      height: 60px;
+    }
+
+    /* FIXED */
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: blue;
+      width: 140px;
+      height: 60px;
+    }
+
+    /* STICKY */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: purple;
+      padding: 15px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>1. Static (Default)</h2>
+  <div class="box static">
+    Static Box
+  </div>
+
+  <h2>2. Relative</h2>
+  <div class="box relative">
+    Relative Box
+  </div>
+
+  <h2>3. Absolute (inside relative parent)</h2>
+  <div class="parent">
+    Parent (relative)
+    <div class="absolute">
+      Absolute
+    </div>
+  </div>
+
+  <h2>4. Sticky Header</h2>
+  <div class="sticky">
+    Sticky Header (scroll me)
+  </div>
+
+  <p>Scroll down 👇👇👇</p>
+
+  <h2>5. Fixed</h2>
+  <p>Scroll the page and watch the blue box.</p>
+
+  <div class="fixed">
+    Fixed Box
+  </div>
+
+</body>
+</html>
