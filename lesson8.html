@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box visible">
+        This is a very very very long text that will overflow outside the box. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat vel laudantium, lorem10
+    </div>
+
+    <div class="box hidden">
+        This is a very very very long text that will overflow outside the box. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente beatae similique quae dicta recusandae? Illo facilis atque odit ducimus debitis eligendi. Odio numquam ad culpa quia ratione alias cupiditate provident dolorem consequatur, officiis tenetur id nihil explicabo! Facere tenetur labore nemo laudantium repellendus maxime, ipsa beatae harum animi necessitatibus.
+    </div>
+
+    <div class="box scroll">
+        This is a very very very long text that will overflow outside the box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, rem ea! Vel ex amet quisquam. Ratione ab ipsum, repudiandae libero ea, amet culpa corrupti maiores nesciunt saepe odio aspernatur officia rerum beatae praesentium, iste laborum. Ab tempora, sint culpa necessitatibus illum enim aliquid ducimus obcaecati alias distinctio eaque, iste quam!
+    </div>
+
+    <div class="box auto">
+        This is a very very very long text that will overflow outside the box. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque explicabo, reiciendis, quis voluptatibus accusantium quam, quidem fugiat consectetur earum voluptatum officia nostrum facilis ea incidunt aliquid! Nesciunt corporis dolore tempora amet debitis corrupti, sit consequuntur maxime, voluptatum, quasi deserunt! Aut nostrum deserunt totam tempora quae! Eligendi laudantium qui in dolore?
+    </div>
+
+</body>
+
+</html>
